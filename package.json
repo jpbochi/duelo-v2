@@ -1,18 +1,59 @@
 {
   "name": "duelo-v2",
-  "version": "0.1.0",
   "private": true,
-  "devDependencies": {
-    "react-scripts": "0.7.0"
-  },
-  "dependencies": {
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+  "version": "1.0.0",
+  "description": "Duelo, again",
+  "license": "MPL-2.0",
+  "config": {
+    "entry": "src/index.js",
+    "ghooks": {
+      "pre-commit": "npm test"
+    },
+    "html": {
+      "title": "duelo-v2",
+      "description": "Duelo, again",
+      "author": "jpbochi"
+    }
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "build": "neo build",
+    "start": "neo start --port 4000",
+    "test": "neo test"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "mozilla-neo": "2.7.0"
+  },
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.2",
+    "ghooks": "1.3.2",
+    "immutable": "3.8.1",
+    "react": "15.3.0",
+    "react-addons-test-utils": "15.3.0",
+    "react-dom": "15.3.0",
+    "react-redux": "4.4.5",
+    "react-router": "2.6.1",
+    "react-router-redux": "4.0.5",
+    "redux": "3.5.2",
+    "redux-devtools": "3.3.1",
+    "redux-devtools-chart-monitor": "1.4.2",
+    "redux-devtools-dock-monitor": "1.1.1",
+    "redux-devtools-log-monitor": "1.0.11",
+    "redux-immutable": "3.0.6",
+    "redux-logger": "2.6.1",
+    "redux-slider-monitor": "1.0.7"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpbochi/duelo-v2.git"
+  },
+  "author": "jpbochi@gmail.com",
+  "bugs": {
+    "url": "https://github.com/jpbochi/duelo-v2/issues"
+  },
+  "homepage": "https://github.com/jpbochi/duelo-v2#readme"
 }
